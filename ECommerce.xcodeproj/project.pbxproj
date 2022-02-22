@@ -102,7 +102,7 @@
 				0558B18827C50AD000F69627 /* AppDelegate.swift */,
 				0558B18A27C50AD000F69627 /* SceneDelegate.swift */,
 				0558B18C27C50AD000F69627 /* ViewController.swift */,
-				0558B18E27C50AD000F69627 /* Main.storyboard */,
+				0558B1B827C5249E00F69627 /* Vİews */,
 				0558B19127C50AD400F69627 /* Assets.xcassets */,
 				0558B19327C50AD400F69627 /* LaunchScreen.storyboard */,
 				0558B19627C50AD400F69627 /* Info.plist */,
@@ -125,6 +125,15 @@
 				0558B1AB27C50AD500F69627 /* ECommerceUITestsLaunchTests.swift */,
 			);
 			path = ECommerceUITests;
+			sourceTree = "<group>";
+		};
+		0558B1B827C5249E00F69627 /* Vİews */ = {
+			isa = PBXGroup;
+			children = (
+				0558B18E27C50AD000F69627 /* Main.storyboard */,
+			);
+			name = "Vİews";
+			path = "Vİews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
