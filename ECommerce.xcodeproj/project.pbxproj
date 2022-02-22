@@ -17,6 +17,7 @@
 		0558B1AA27C50AD500F69627 /* ECommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558B1A927C50AD500F69627 /* ECommerceUITests.swift */; };
 		0558B1AC27C50AD500F69627 /* ECommerceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558B1AB27C50AD500F69627 /* ECommerceUITestsLaunchTests.swift */; };
 		0558B1BA27C5258700F69627 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558B1B927C5258700F69627 /* Product.swift */; };
+		0558B1BD27C527EE00F69627 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0558B1BC27C527EE00F69627 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0558B1A927C50AD500F69627 /* ECommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceUITests.swift; sourceTree = "<group>"; };
 		0558B1AB27C50AD500F69627 /* ECommerceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0558B1B927C5258700F69627 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0558B1BC27C527EE00F69627 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0558B18C27C50AD000F69627 /* ViewController.swift */,
 				0558B1BB27C5258C00F69627 /* Models */,
 				0558B1B827C5249E00F69627 /* Vİews */,
+				0558B1BE27C527F100F69627 /* Network */,
 				0558B19127C50AD400F69627 /* Assets.xcassets */,
 				0558B19327C50AD400F69627 /* LaunchScreen.storyboard */,
 				0558B19627C50AD400F69627 /* Info.plist */,
@@ -145,6 +148,14 @@
 				0558B1B927C5258700F69627 /* Product.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0558B1BE27C527F100F69627 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0558B1BC27C527EE00F69627 /* NetworkController.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0558B1BD27C527EE00F69627 /* NetworkController.swift in Sources */,
 				0558B18D27C50AD000F69627 /* ViewController.swift in Sources */,
 				0558B1BA27C5258700F69627 /* Product.swift in Sources */,
 				0558B18927C50AD000F69627 /* AppDelegate.swift in Sources */,
