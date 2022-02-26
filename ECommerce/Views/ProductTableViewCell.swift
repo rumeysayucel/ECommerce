@@ -13,11 +13,11 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var addToBagButton: UIButton!
+    @IBOutlet weak var hearttButton: UIButton!
     
     // MARK: - Properties
     var results: Product!
 
-    
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,7 +36,8 @@ class ProductTableViewCell: UITableViewCell {
         priceLabel.text = String(product.price) + " $"
     }
     
-    // MARK: - IBActions    
+    // MARK: - IBActions
+    
     @IBAction func addToBagButtonTapped(_ sender: UIButton) {
         ShoppingCart.shared.addProduct(results, withCount: 1)
     }

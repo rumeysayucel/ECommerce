@@ -94,6 +94,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addToBagButton" destination="z9Z-wA-jqd" id="vge-if-f1d"/>
+                                            <outlet property="hearttButton" destination="aQz-dL-5O2" id="AFd-8b-rOB"/>
                                             <outlet property="nameLabel" destination="hJU-8y-OJd" id="T7y-zD-PBw"/>
                                             <outlet property="priceLabel" destination="qmJ-W7-ahU" id="znP-J1-qxh"/>
                                             <outlet property="productimageView" destination="5A3-W7-S3C" id="gjr-3i-O8u"/>
@@ -306,6 +307,7 @@
                         <outlet property="bagCountLabel" destination="TYl-hn-EKk" id="rRI-fp-r6m"/>
                         <outlet property="categoryLabel" destination="GuB-gY-xV0" id="Weo-7H-A1B"/>
                         <outlet property="colorLabel" destination="3jc-07-SAX" id="4bQ-QP-e7m"/>
+                        <outlet property="heartButton" destination="F71-Cp-GgJ" id="113-YA-ndA"/>
                         <outlet property="priceLabel" destination="1qI-TV-k9h" id="Gpv-X6-b2J"/>
                         <outlet property="productimageView" destination="u6o-Ff-Qwr" id="5tq-j6-xMp"/>
                         <outlet property="removeButton" destination="tmW-3p-PpG" id="NBS-et-YZ4"/>

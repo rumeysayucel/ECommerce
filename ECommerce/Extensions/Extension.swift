@@ -15,3 +15,16 @@ extension UIImageView {
         self.layer.borderColor = UIColor.lightGray.cgColor
     }
 }
+
+extension UIButton {
+    func favButtonPressed() {
+        if self.tintColor == .black {
+            self.tintColor = .red
+            self.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+        }else {
+            self.tintColor = .black
+            self.setImage(UIImage(systemName: "heart"), for: .normal)
+        }
+
+    }
+}

@@ -28,6 +28,7 @@ class OrderConfirmViewController: UIViewController {
 
     // MARK: - IBActions
     @IBAction func ConfirmButtonTapped(_ sender: UIButton) {
+        navigationController?.popToRootViewController(animated: true)
     }
 
 }

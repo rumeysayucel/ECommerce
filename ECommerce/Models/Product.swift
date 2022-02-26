@@ -7,25 +7,9 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - Results
 struct Results: Decodable {
     let products: [Product]
-    let totalProductCount: Int
-    let filterOptions: [FilterOption]
-    let sortOptions: [SortOption]
-
-    enum CodingKeys: String, CodingKey {
-        case products
-        case totalProductCount = "total_product_count"
-        case filterOptions = "filter_options"
-        case sortOptions = "sort_options"
-    }
-}
-
-// MARK: - FilterOption
-struct FilterOption: Codable {
-    let name: String
-    let values: [String]
 }
 
 // MARK: - Product
@@ -44,39 +28,9 @@ struct Product: Codable {
         case color
     }
 }
-
-//enum Category: String, Codable {
-//    case coat = "Coat"
-//    case dress = "Dress"
-//    case sweater = "Sweater"
-//}
-
-//enum Color: String, Codable {
-//    case black = "Black"
-//    case blue = "Blue"
-//    case white = "White"
-//}
-//
-//enum Currency: String, Codable {
-//    case usd = "USD"
-//}
-
+// MARK: - Product Extension
 extension Product: Hashable {
   var hashValue: Int {
     return name.hashValue
   }
 }
-
-extension Product: Equatable {
-  static func == (lhs: Product, rhs: Product) -> Bool {
-    return (lhs.name == rhs.name &&
-      lhs.imageName == rhs.imageName &&
-      lhs.price == rhs.price)
-  }
-}
-
-// MARK: - SortOption
-struct SortOption: Codable {
-    let id, name: String
-}
-

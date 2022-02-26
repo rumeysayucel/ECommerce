@@ -14,9 +14,6 @@ class ShoppingBagViewController: UIViewController {
 
     
     // MARK: - Properties
-    var bagProducts = [Product]()
-    var bags: Product!
-    
     var cartItems: [CartItem] = []
     var totalPrice: Float = 0 {
       didSet {
@@ -40,8 +37,8 @@ class ShoppingBagViewController: UIViewController {
     
     // MARK: - Functions
     private func loadData() {
-      cartItems = ShoppingCart.shared.getCartItems()
-      totalPrice = ShoppingCart.shared.getTotalCost()
+        cartItems = ShoppingCart.shared.getCartItems()
+        totalPrice = ShoppingCart.shared.getTotalCost()
     }
     private func removeCartItem(at row: Int) {
       guard row < cartItems.count else { return }
@@ -84,7 +81,7 @@ extension ShoppingBagViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "bagCell", for: indexPath) as? BagTableViewCell{
         cell.bagConfigure(with: cartItems[indexPath.row])
-        return cell
+            return cell
         }
         return UITableViewCell()
     }

@@ -17,12 +17,10 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet private weak var removeButton: UIButton!
     @IBOutlet private weak var addButton: UIButton!
     @IBOutlet private weak var addToCartButton: UIButton!
+    @IBOutlet weak var heartButton: UIButton!
     
     // MARK: - Properties
     var results: Product!
-    var bags = [Product]()
-    
-    var product: Product!
     var totalOrder: Int = 1 {
       didSet {
         if viewIfLoaded != nil {
@@ -54,8 +52,10 @@ class ProductDetailViewController: UIViewController {
         productimageView.makeCircularImageView()
      }
     
+
     // MARK: - IBActions
     @IBAction func heartButtonTapped(_ sender: UIButton) {
+        heartButton.favButtonPressed()
     }
     
     @IBAction private func addButtonPressed() {

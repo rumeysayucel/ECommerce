@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     var products = [Product]()
-    var results: Product!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -47,7 +46,6 @@ class HomeViewController: UIViewController {
     
     
     // MARK: - IBActions
-    
     
 }
 
